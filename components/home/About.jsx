@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div>
       <section className="py-16">
-        <div className="container mx-auto px-4 xl:px-0">
+        <div className="container mx-auto px-4 2xl:px-0">
           <div className="grid gap-4 lg:grid-cols-2 lg:gap-8">
             <Image src={ImageAbout} alt="Image About" className='w-full' />
             <article className='h-full flex flex-col justify-center items-start '>

@@ -10,7 +10,7 @@ const FontInter = Inter({subsets: ['latin'], weight: "700"});
 const Hero = () => {
   return (
     <div className="py-[200px] lg:py-[300px] bg-[url('/hero.png')] bg-right bg-no-repeat">
-        <div className="container mx-auto px-4 xl:px-0">
+        <div className="container mx-auto px-4 2xl:px-0">
             <div className="grid grid-cols-12 gap-5">
                 <div className="col-span-12 md:col-span-10 xl:col-span-7">
                     <div className={`bg-gradient-to-r from-[#C10505] to-[#045EE1] max-w-max rounded-md py-2 px-[30px] text-[24px] ${fontPoppins.className} mb-[30px]`}>Welcome to Kuantum</div>
