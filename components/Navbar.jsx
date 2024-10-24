@@ -12,7 +12,7 @@ const Navbar = () => {
   console.log(currentPage);
   const [show, setShow] = useState(false)
   return (
-    <div className="container mx-auto px-4 xl:px-0">
+    <div className="container mx-auto px-4 2xl:px-0">
       <div className='py-4  flex justify-between items-center'>
         <Image src={Logo} alt='Logo' priority />
 
