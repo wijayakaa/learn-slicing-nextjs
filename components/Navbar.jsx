@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from 'react'
-import Image from 'next/image'
-import Logo from '../public/logo.png'
-import Link from 'next/link'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Logo from '../public/logo.png';
+import Link from 'next/link';
 import { menu } from '@/data/menu';
 import { HiOutlineX, HiOutlineMenuAlt3 } from "react-icons/hi";
 import { usePathname } from 'next/navigation';

@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import React from 'react'
-import { Poppins, Passion_One,Inter } from 'next/font/google'
+import Link from 'next/link';
+import React from 'react';
+import { Poppins, Passion_One,Inter } from 'next/font/google';
 
 
 const fontPoppins = Poppins({subsets: ['latin'], weight: "400"});

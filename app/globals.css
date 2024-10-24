@@ -16,3 +16,25 @@
   height: 2px;
   background-color: white;
 }
+
+.title-section{
+  @apply text-[45px] leading-[67px];
+}
+
+p{
+  @apply mb-5 text-[16px] lg:text-[18px];
+}
+
+p:last-of-type{
+  @apply mb-0;
+}
+
+.list-about-us li{
+  @apply mb-4 text-[16px] lg:text-[18px];
+
+}
+
+.list-about-us li:last-child{
+  @apply mb-0;
+
+}
