@@ -42,3 +42,7 @@ p:last-of-type{
 .socmed a {
   @apply w-[24px] h-[24px] rounded-md bg-white hover:bg-[#045EE1] duration-300 flex justify-center items-center;
 }
+
+.title-page{
+  @apply text-center text-[45px] leading-[67px] mb-6 ;
+}
