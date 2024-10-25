@@ -40,5 +40,5 @@ p:last-of-type{
 }
 
 .socmed a {
-  @apply w-[24px] h-[24px] rounded-md bg-white flex justify-center items-center;
+  @apply w-[24px] h-[24px] rounded-md bg-white hover:bg-[#045EE1] duration-300 flex justify-center items-center;
 }
