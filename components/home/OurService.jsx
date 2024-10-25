@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 
 
-const   poppins  = Poppins({subsets: ['latin'], weight: "600"});
+const poppins  = Poppins({subsets: ['latin'], weight: "600"});
 const OurService = () => {
   return (
     <div>
@@ -15,11 +15,11 @@ const OurService = () => {
             <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-5'>
                 {services.map((service, i) => {
                     return  (
-                        <div className="item-service py-[30px] px-[38px] bg-black rounded-[24px] " key={i}>
+                        <div className="item-service py-[30px] px-[38px] bg-black rounded-[24px] mt-8">
                             <div className="logo-service relative w-[60px] h-[60px] mb-4">
                                 <Image src={service.logo} alt={service.title} fill/>
                             </div>
-                            <h3 className={`${poppins.className} text-[25px] leading-[37px] mb-3`}>{service.title}</h3>
+                            <h3 className={`${poppins.className} text-[25px] leading-[37px] mb-8`} key={i}>{service.title}</h3>
                             <p className='text-[#6B6B6B]'>{service.desc}</p>
                         </div>
                     )
