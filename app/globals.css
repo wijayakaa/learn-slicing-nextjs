@@ -38,3 +38,7 @@ p:last-of-type{
   @apply mb-0;
 
 }
+
+.socmed a {
+  @apply w-[24px] h-[24px] rounded-md bg-white flex justify-center items-center;
+}
