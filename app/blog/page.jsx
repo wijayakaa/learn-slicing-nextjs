@@ -4,6 +4,8 @@ import banner from '../../public/about/banner.png';
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import { blog } from '@/data/blog';
+import arrowLeft from '../../public/arrow-left.svg';
+import arrowRight from '../../public/arrow-right.svg';
 
 
 const poppins  = Poppins({subsets: ['latin'], weight: "600"});
@@ -16,12 +18,12 @@ const Blog = () => {
         </div>
         <div className="container mx-auto px px-4 py-16 2xl:px-0">
           <h2 className={`title-page ${poppins.className}`}>About Us</h2>
-            <div className="grid grid-cols-3 gap-y-8 gap-x-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-4">
               {blog.map((item, i) => {
                 return (
                   <div key={i} className="item-blog">
                     <div className="thumb w-100 h-[261px] relative mb-[20px]">
-                      <Image src={item.thumbnail} alt="thumbnail" fill/>
+                      <Image src={item.thumbnail} alt="thumbnail" fill sizes='(max-width: 100%)'/>
                     </div>
                     <h2 className={`text-[30px] font-bold ${poppins.className} leading-[35px] mb-4`}>{item.title}</h2>
                     <p className='text-[16px]'>{item.desc}</p>
@@ -32,22 +34,32 @@ const Blog = () => {
                 )})}
             </div>
 
-          <div className="mt-8">
-              <ul className='pagination flex justify-center items-center'>
-                <li className=''>
-                  <Link className='' href="#">1</Link>
+          <div className="mt-10">
+              <ul className='pagination flex gap-2 justify-center items-center'>
+                <li>
+                  <Link href='#' className='!bg-transparent !p-0 md:!px-3'>
+                    <Image alt='first' src={arrowLeft}/>
+                  </Link>
+                </li>
+                <li>
+                  <Link className='active' href="#">1</Link>
                 </li>
                 <li>
                   <Link href="#">2</Link>
                 </li>
                 <li>
-                  <Link href="#" className='text-black font-bold'>3</Link>
+                  <Link href="#">3</Link>
                 </li>
                 <li>
                   <Link href="#">4</Link>
                 </li>
                 <li>
                   <Link href="#">5</Link>
+                </li>
+                <li>
+                  <Link href='#' className='!bg-transparent !p-0 md:!px-3'>
+                    <Image alt='last' src={arrowRight}/>
+                  </Link>
                 </li>
               </ul>
           </div>
