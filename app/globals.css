@@ -47,10 +47,15 @@ p:last-of-type{
   @apply text-center text-[45px] leading-[67px] mb-6 ;
 }
 
-.pagination li{
-  @apply py-[11px] px-[18px] rounded-[8px] bg-white;
-}
 
 .pagination li a {
-  @apply text-black font-bold;
+  @apply block py-[11px] px-[18px] rounded-[8px] bg-white text-black font-bold;
+}
+
+.pagination li {
+  flex-shrink: 0;
+}
+
+.pagination li a.active {
+  @apply bg-[#045EE1] text-white;
 }

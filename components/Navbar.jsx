@@ -9,7 +9,8 @@ import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const currentPage = usePathname();
-  console.log(currentPage);
+  const newUrl = currentPage.split('/');
+  console.log(newUrl);
   const [show, setShow] = useState(false)
 
   return (
@@ -35,7 +36,7 @@ const Navbar = () => {
               {menu.map((item, i) => {
                 return (
                   <Link
-                    className={currentPage == item.url ? "active" : ""}
+                    className={`/${newUrl[1]}` == item.url ? "active" : ""}
                     key={i}
                     href={item.url}>
                     {item.label}
